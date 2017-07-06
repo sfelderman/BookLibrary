@@ -1,0 +1,17 @@
+{
+  "name": "book-lib",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.0.2",
+    "express": "^4.0.0",
+    "mongodb": "^2.2.29",
+    "mongoose": "^4.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

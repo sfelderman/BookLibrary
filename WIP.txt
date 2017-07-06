@@ -1,0 +1,37 @@
+movieController.js
+
+module.exports = {
+    getMovie : function(req, res){
+       //do something
+    },
+    getMovies : function(req, res){
+       //do something
+    },
+    postMovie : function(req, res){
+       //do something
+    }
+}
+
+
+------------------------------------------------------
+routes.js
+
+var express = require('express');
+var movieCtrl = require('./movieController');
+
+var router = express.Router();
+
+router.route('/movie').get(movieCtrl.getMovie);
+router.route('/movie').post(movieCtrl.postMovie);
+router.route('/movies').get(movieCtrl.getMovies);
+
+module.exports = router;
+
+
+------------------------------------------------------------------------
+
+
+app.js
+
+var routes = require('./routes');
+app.use('/api', routes);
