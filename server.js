@@ -35,7 +35,7 @@ var port = process.env.PORT || 8080;        // set our port
 
 // ROUTES FOR OUR API
 // =============================================================================
-var routes = require('./routes');
+var routes = require('./backend/routes');
 app.use('/api', routes);
 
 

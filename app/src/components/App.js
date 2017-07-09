@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
-import './App.css';
+import BookList from './BookList'
 
 class App extends Component {
   render() {
+    const list = [
+      {
+        title: 'first',
+        length: 1
+      },
+      {
+        title: 'second',
+        length: 2
+      }
+    ]
     return (
-      <div className="App">
-        <div className="App-header">
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <BookList list={list} />
     );
   }
 }
